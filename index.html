@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prem Sai — AI &amp; ML Engineer | Portfolio</title>
+  <meta name="description" content="Portfolio of Kappaganthula Prem Sai — Computer Science student specializing in AI, Machine Learning, and Software Engineering. Explore projects, research, and skills.">
+  <meta name="author" content="Kappaganthula Prem Sai">
+  <meta name="keywords" content="AI, Machine Learning, RISC-V, EMG, Portfolio, Software Engineer, Computer Science">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Prem Sai — AI & ML Engineer">
+  <meta property="og:description" content="Portfolio of Kappaganthula Prem Sai — Computer Science student specializing in AI, Machine Learning, and Software Engineering.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://prem1306.github.io">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prem Sai — AI & ML Engineer">
+  <meta name="twitter:description" content="Portfolio of Kappaganthula Prem Sai — Computer Science student specializing in AI, Machine Learning, and Software Engineering.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="navbar-brand">
+        PS<span>.</span>
+      </a>
+
+      <div class="navbar-menu" id="navbar-menu">
+        <a href="#home" class="navbar-link active">Home</a>
+        <a href="#about" class="navbar-link">About</a>
+        <a href="#skills" class="navbar-link">Skills</a>
+        <a href="#projects" class="navbar-link">Projects</a>
+        <a href="#research" class="navbar-link">Research</a>
+        <a href="#journey" class="navbar-link">Journey</a>
+        <a href="#contact" class="navbar-link">Contact</a>
+      </div>
+
+      <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero section" id="home">
+    <canvas class="hero-canvas" id="hero-canvas"></canvas>
+
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+
+      <h1 class="hero-name">
+        <span class="first-name">Kappaganthula</span>
+        <span class="last-name">Prem Sai</span>
+      </h1>
+
+      <div class="hero-typewriter-wrapper">
+        <span>I build&nbsp;</span>
+        <span class="hero-typewriter" id="typewriter-text"></span>
+      </div>
+
+      <p class="hero-description">
+        Computer Science student passionate about building intelligent systems
+        that bridge the gap between software and hardware.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          View Projects
+        </a>
+        <a href="https://github.com/prem1306" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/kappaganthula-prem-sai-a16866419/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- ============================================================
+         ABOUT SECTION
+         ============================================================ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">About</span>
+          <h2 class="section-title">Who I Am</h2>
+          <p class="section-subtitle">A brief look at my background, interests, and goals.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Bio Text -->
+          <div class="about-text reveal">
+            <h3>Computer Science student building at the intersection of <span class="about-highlight">AI and hardware</span>.</h3>
+            <p>
+              I'm a 3rd-year B.E. Computer Science student at SCSVMV University, Kanchipuram.
+              I enjoy learning by building real projects — from neural prosthetic systems running on RISC-V processors,
+              to full-stack web applications and multi-agent AI frameworks.
+            </p>
+            <p>
+              My core strengths are in C/C++ and Python, with growing expertise in machine learning,
+              computer vision, and backend development. I believe the strongest learning comes from
+              writing code, debugging it, and shipping it — not just studying theory.
+            </p>
+            <p>
+              Currently preparing for <span class="about-highlight">GATE 2026</span> with the goal of pursuing
+              an M.S. at IIT Madras in ML Systems and hardware-aware optimization.
+            </p>
+
+            <!-- Stats -->
+            <div class="about-stats">
+              <div class="stat">
+                <div class="stat-value" data-count="4" data-suffix="+">0+</div>
+                <div class="stat-label">Projects</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value" data-count="1">0</div>
+                <div class="stat-label">Publication</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value" data-count="1">0</div>
+                <div class="stat-label">Hackathon</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Info Cards -->
+          <div class="about-sidebar">
+            <div class="glass-card about-info-card reveal stagger-1">
+              <h4>Education</h4>
+              <p>B.E. Computer Science Engineering<br>SCSVMV University, Kanchipuram<br>3rd Year • CGPA: 8.05</p>
+            </div>
+
+            <div class="glass-card about-info-card reveal stagger-2">
+              <h4>Goals</h4>
+              <p>M.S. at IIT Madras (ML Systems) → International PhD in AI Research → Build impactful AI products</p>
+            </div>
+
+            <div class="glass-card about-info-card reveal stagger-3">
+              <h4>Interests</h4>
+              <div class="interest-tags">
+                <span class="interest-tag">Artificial Intelligence</span>
+                <span class="interest-tag">Machine Learning</span>
+                <span class="interest-tag">Computer Vision</span>
+                <span class="interest-tag">Neural Interfaces</span>
+                <span class="interest-tag">RISC-V</span>
+                <span class="interest-tag">Deep Learning</span>
+                <span class="interest-tag">Agentic AI</span>
+                <span class="interest-tag">Robotics</span>
+                <span class="interest-tag">Game Dev</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ============================================================
+         SKILLS SECTION
+         ============================================================ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Skills</span>
+          <h2 class="section-title">Technical Arsenal</h2>
+          <p class="section-subtitle">Languages, frameworks, and tools I work with.</p>
+        </div>
+
+        <div class="skills-categories">
+
+          <!-- Languages -->
+          <div class="skill-category reveal">
+            <h3>
+              <span class="category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>
+              Programming Languages
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-card reveal"><span class="skill-icon">⚙️</span><span class="skill-name">C</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">🔧</span><span class="skill-name">C++</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">🐍</span><span class="skill-name">Python</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">🗃️</span><span class="skill-name">SQL</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">🌐</span><span class="skill-name">HTML</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">🎨</span><span class="skill-name">CSS</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">⚡</span><span class="skill-name">JavaScript</span></div>
+            </div>
+          </div>
+
+          <!-- AI/ML -->
+          <div class="skill-category reveal">
+            <h3>
+              <span class="category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2v2a4 4 0 0 0 8 0v-2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"/></svg>
+              </span>
+              AI / Machine Learning
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-card reveal"><span class="skill-icon">📊</span><span class="skill-name">Scikit-learn</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">👁️</span><span class="skill-name">OpenCV</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">🎯</span><span class="skill-name">YOLO</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">📈</span><span class="skill-name">SVM</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">🌲</span><span class="skill-name">Random Forest</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">🔬</span><span class="skill-name">Feature Eng.</span></div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-category reveal">
+            <h3>
+              <span class="category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              </span>
+              Backend
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-card reveal"><span class="skill-icon">⚡</span><span class="skill-name">FastAPI</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">🔗</span><span class="skill-name">REST APIs</span></div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-category reveal">
+            <h3>
+              <span class="category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </span>
+              Tools &amp; Platforms
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-card reveal"><span class="skill-icon">📂</span><span class="skill-name">Git</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">🐙</span><span class="skill-name">GitHub</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">💻</span><span class="skill-name">VS Code</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">📓</span><span class="skill-name">Jupyter</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">🤖</span><span class="skill-name">Roboflow</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">📊</span><span class="skill-name">Kaggle</span></div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category reveal">
+            <h3>
+              <span class="category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </span>
+              Databases
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-card reveal"><span class="skill-icon">🗄️</span><span class="skill-name">SQLite</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">🐘</span><span class="skill-name">PostgreSQL</span></div>
+            </div>
+          </div>
+
+          <!-- Currently Learning -->
+          <div class="skill-category learning reveal">
+            <h3>
+              <span class="category-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </span>
+              Currently Learning
+            </h3>
+            <div class="skills-grid">
+              <div class="skill-card reveal"><span class="skill-icon">🔥</span><span class="skill-name">PyTorch</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">🧠</span><span class="skill-name">Deep Learning</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">⚛️</span><span class="skill-name">React</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">🏗️</span><span class="skill-name">System Design</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">🤖</span><span class="skill-name">LLMs</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">🧩</span><span class="skill-name">Agentic AI</span></div>
+              <div class="skill-card reveal"><span class="skill-icon">📐</span><span class="skill-name">DSA</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ============================================================
+         PROJECTS SECTION
+         ============================================================ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Projects</span>
+          <h2 class="section-title">What I've Built</h2>
+          <p class="section-subtitle">A selection of projects I've worked on. Click any card for details.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: EMG -->
+          <div class="glass-card project-card reveal" data-project="emg">
+            <div class="project-card-image">
+              <span class="project-icon">🧠</span>
+            </div>
+            <div class="project-card-body">
+              <span class="badge badge-accent project-card-badge">⭐ Flagship</span>
+              <h3 class="project-card-title">Neural Prosthetic EMG System</h3>
+              <p class="project-card-tagline">SHAKTI RISC-V · Real-time Gesture Recognition</p>
+              <p class="project-card-desc">
+                ML model for recognizing hand gestures from EMG signals, targeting deployment on SHAKTI RISC-V
+                with fixed-point arithmetic and sub-100ms latency.
+              </p>
+              <div class="project-card-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Verilog</span>
+                <span class="tech-tag">RISC-V</span>
+                <span class="tech-tag">C</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/prem1306" target="_blank" rel="noopener noreferrer" class="project-card-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                  GitHub
+                </a>
+                <span class="view-details-hint">Click for details →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: ShopSphere -->
+          <div class="glass-card project-card reveal stagger-1" data-project="shopsphere">
+            <div class="project-card-image">
+              <span class="project-icon">🛒</span>
+            </div>
+            <div class="project-card-body">
+              <span class="badge project-card-badge">Full-Stack</span>
+              <h3 class="project-card-title">ShopSphere</h3>
+              <p class="project-card-tagline">React.js · FastAPI · Full E-Commerce</p>
+              <p class="project-card-desc">
+                Complete e-commerce application built file-by-file with React.js frontend and FastAPI backend.
+                Every component written and debugged personally.
+              </p>
+              <div class="project-card-tech">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/prem1306" target="_blank" rel="noopener noreferrer" class="project-card-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                  GitHub
+                </a>
+                <span class="view-details-hint">Click for details →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: MyAIAgent -->
+          <div class="glass-card project-card reveal stagger-2" data-project="myaiagent">
+            <div class="project-card-image">
+              <span class="project-icon">🤖</span>
+            </div>
+            <div class="project-card-body">
+              <span class="badge badge-accent project-card-badge">AI / Agents</span>
+              <h3 class="project-card-title">MyAIAgent</h3>
+              <p class="project-card-tagline">Multi-Agent · Gemini · Chrome Extension</p>
+              <p class="project-card-desc">
+                Locally-hosted multi-agent AI framework with FastAPI backend, Gemini 2.5 Flash via LiteLLM,
+                SQLite memory, and Chrome MV3 extension.
+              </p>
+              <div class="project-card-tech">
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Gemini</span>
+                <span class="tech-tag">LiteLLM</span>
+                <span class="tech-tag">Chrome MV3</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/prem1306" target="_blank" rel="noopener noreferrer" class="project-card-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                  GitHub
+                </a>
+                <span class="view-details-hint">Click for details →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Yatra Guide -->
+          <div class="glass-card project-card reveal stagger-3" data-project="yatraguide">
+            <div class="project-card-image">
+              <span class="project-icon">🗺️</span>
+            </div>
+            <div class="project-card-body">
+              <span class="badge project-card-badge">Web App</span>
+              <h3 class="project-card-title">Yatra Guide</h3>
+              <p class="project-card-tagline">Travel Advisory · Location-Aware</p>
+              <p class="project-card-desc">
+                Location-aware travel advisory platform providing travel information and
+                assistance. Built with classic web technologies.
+              </p>
+              <div class="project-card-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">PHP</span>
+              </div>
+              <div class="project-card-footer">
+                <a href="https://github.com/prem1306" target="_blank" rel="noopener noreferrer" class="project-card-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                  GitHub
+                </a>
+                <span class="view-details-hint">Click for details →</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="project-modal">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ============================================================
+         RESEARCH SECTION
+         ============================================================ -->
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Research</span>
+          <h2 class="section-title">Publications</h2>
+          <p class="section-subtitle">Academic contributions and research work.</p>
+        </div>
+
+        <div class="research-card glass-card reveal-scale">
+          <div class="research-card-inner">
+            <span class="research-type">Conceptual Proposal • ResearchGate Preprint</span>
+            <h3 class="research-title">Closed-Loop Neurostimulation: A Conceptual Framework</h3>
+            <p class="research-desc">
+              A conceptual proposal exploring closed-loop neurostimulation systems — where neural signals
+              are continuously monitored and stimulation is adaptively adjusted in real-time.
+              This is a theoretical framework paper; no experimental results are included.
+            </p>
+
+            <div class="research-meta">
+              <span class="research-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Kappaganthula Prem Sai
+              </span>
+              <span class="research-meta-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                ResearchGate
+              </span>
+            </div>
+
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="https://doi.org/10.13140/RG.2.2.27438.16960" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                View on ResearchGate
+              </a>
+              <span class="badge badge-accent">DOI: 10.13140/RG.2.2.27438.16960</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ============================================================
+         JOURNEY TIMELINE
+         ============================================================ -->
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Journey</span>
+          <h2 class="section-title">My Path So Far</h2>
+          <p class="section-subtitle">Key milestones in my learning and building journey.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">Present</span>
+            <h3 class="timeline-title">GATE 2026 Preparation</h3>
+            <p class="timeline-desc">
+              Preparing for GATE with the goal of M.S. at IIT Madras in ML Systems and hardware-aware optimization.
+              Continuing to build projects and strengthen DSA fundamentals.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">2025</span>
+            <h3 class="timeline-title">University AI Presentation</h3>
+            <p class="timeline-desc">
+              Presented MyAIAgent — a locally-hosted multi-agent AI framework — at a university technical session.
+              Demonstrated multi-agent orchestration with Gemini and Chrome extension integration.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">2025</span>
+            <h3 class="timeline-title">ResearchGate Publication</h3>
+            <p class="timeline-desc">
+              Published a conceptual proposal on closed-loop neurostimulation systems on ResearchGate.
+              First academic writing experience in AI and neural interfaces.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">2024</span>
+            <h3 class="timeline-title">IIT Madras RISC-V Workshop</h3>
+            <p class="timeline-desc">
+              Attended a RISC-V, SHAKTI, and Bluespec workshop at IIT Madras.
+              Gained hands-on experience with the SHAKTI processor architecture.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">2024</span>
+            <h3 class="timeline-title">Road Safety Hackathon</h3>
+            <p class="timeline-desc">
+              Participated in a road safety hackathon at IIT Madras, building RoadWatch — an AI-powered
+              road damage detection platform using MobileNetV2 and computer vision.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">2023</span>
+            <h3 class="timeline-title">Started ML &amp; AI Journey</h3>
+            <p class="timeline-desc">
+              Began exploring Machine Learning and Artificial Intelligence.
+              Built first ML projects using Scikit-learn and started learning computer vision with OpenCV.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">2022</span>
+            <h3 class="timeline-title">Started Programming</h3>
+            <p class="timeline-desc">
+              Began learning programming with C and C++. Started B.E. Computer Science at SCSVMV University.
+              Discovered a passion for building software and solving problems through code.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ============================================================
+         CONTACT SECTION
+         ============================================================ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">Feel free to reach out for collaborations, opportunities, or just to say hello.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Info -->
+          <div class="contact-info reveal">
+            <h3>Get In Touch</h3>
+            <p>
+              I'm currently looking for internship opportunities in AI and software development.
+              Whether you have a question, want to collaborate, or just want to connect — my inbox is always open.
+            </p>
+
+            <div class="contact-links">
+              <div class="contact-link-item" onclick="window.open('mailto:kpsai5762@gmail.com')">
+                <div class="contact-link-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div class="contact-link-text">
+                  <span class="contact-link-label">Email</span>
+                  <span class="contact-link-value">kpsai5762@gmail.com</span>
+                </div>
+                <button class="copy-btn" data-copy="kpsai5762@gmail.com" onclick="event.stopPropagation()">Copy</button>
+              </div>
+
+              <a href="https://github.com/prem1306" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-link-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </div>
+                <div class="contact-link-text">
+                  <span class="contact-link-label">GitHub</span>
+                  <span class="contact-link-value">github.com/prem1306</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/kappaganthula-prem-sai-a16866419/" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                <div class="contact-link-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <div class="contact-link-text">
+                  <span class="contact-link-label">LinkedIn</span>
+                  <span class="contact-link-value">Kappaganthula Prem Sai</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="contact-form-wrapper reveal stagger-2">
+            <h3>Send a Message</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="your@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Write your message..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="https://github.com/prem1306" target="_blank" rel="noopener noreferrer" class="btn-icon" data-tooltip="GitHub" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/kappaganthula-prem-sai-a16866419/" target="_blank" rel="noopener noreferrer" class="btn-icon" data-tooltip="LinkedIn" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:kpsai5762@gmail.com" class="btn-icon" data-tooltip="Email" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+
+        <p class="footer-text">
+          Built with HTML, CSS &amp; JavaScript
+        </p>
+        <p class="footer-credit">
+          &copy; 2026 <span>Kappaganthula Prem Sai</span>. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* ============================================================
+   DESIGN TOKENS — Portfolio Design System
+   All colors, spacing, typography, and effects defined here.
+   Change these to re-theme the entire site.
+   ============================================================ */
+
+:root {
+  /* ---- Colors ---- */
+  --color-primary:        #3B82F6;
+  --color-primary-rgb:    59, 130, 246;
+  --color-primary-dark:   #2563EB;
+  --color-primary-light:  #60A5FA;
+
+  --color-accent:         #06B6D4;
+  --color-accent-rgb:     6, 182, 212;
+
+  --color-bg:             #050507;
+  --color-bg-rgb:         5, 5, 7;
+  --color-surface:        #0D0D12;
+  --color-surface-raised: #13131A;
+
+  --color-text:           #F1F5F9;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted:     #64748B;
+
+  --color-border:         rgba(255, 255, 255, 0.06);
+  --color-border-hover:   rgba(255, 255, 255, 0.12);
+
+  --color-success:        #22C55E;
+  --color-warning:        #F59E0B;
+  --color-error:          #EF4444;
+
+  /* ---- Glass ---- */
+  --glass-bg:             rgba(255, 255, 255, 0.03);
+  --glass-bg-hover:       rgba(255, 255, 255, 0.06);
+  --glass-blur:           20px;
+  --glass-border:         1px solid rgba(255, 255, 255, 0.08);
+
+  /* ---- Typography ---- */
+  --font-sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono:  'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+
+  --text-xs:    0.75rem;     /* 12px */
+  --text-sm:    0.875rem;    /* 14px */
+  --text-base:  1rem;        /* 16px */
+  --text-lg:    1.125rem;    /* 18px */
+  --text-xl:    1.25rem;     /* 20px */
+  --text-2xl:   1.5rem;      /* 24px */
+  --text-3xl:   1.875rem;    /* 30px */
+  --text-4xl:   2.25rem;     /* 36px */
+  --text-5xl:   3rem;        /* 48px */
+  --text-6xl:   3.75rem;     /* 60px */
+  --text-7xl:   4.5rem;      /* 72px */
+
+  --leading-tight:  1.2;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.8;
+
+  --tracking-tight:  -0.02em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.05em;
+  --tracking-wider:   0.1em;
+
+  /* ---- Spacing ---- */
+  --space-1:   0.25rem;
+  --space-2:   0.5rem;
+  --space-3:   0.75rem;
+  --space-4:   1rem;
+  --space-5:   1.25rem;
+  --space-6:   1.5rem;
+  --space-8:   2rem;
+  --space-10:  2.5rem;
+  --space-12:  3rem;
+  --space-16:  4rem;
+  --space-20:  5rem;
+  --space-24:  6rem;
+  --space-32:  8rem;
+
+  /* ---- Radius ---- */
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-full: 9999px;
+
+  /* ---- Shadows ---- */
+  --shadow-sm:   0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md:   0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg:   0 8px 30px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 30px rgba(var(--color-primary-rgb), 0.15);
+  --shadow-glow-accent: 0 0 30px rgba(var(--color-accent-rgb), 0.15);
+
+  /* ---- Transitions ---- */
+  --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:  cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-spring:  cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --duration-fast:   150ms;
+  --duration-normal: 300ms;
+  --duration-slow:   500ms;
+
+  /* ---- Z-index ---- */
+  --z-base:     1;
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-navbar:   500;
+  --z-modal:    1000;
+  --z-tooltip:  1500;
+  --z-cursor:   9999;
+
+  /* ---- Layout ---- */
+  --container-max:  1200px;
+  --container-padding: var(--space-6);
+  --section-padding: var(--space-24) 0;
+  --navbar-height:  72px;
+}
